@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import s from './ContactsItem.module.css'
 
-const ContactsItem = ({ id, name, number, onDeleteContact }) => (
+const ContactsItem = ({ name, number, onDeleteContact }) => (
      <li className={s.item}>
         <p className={s.text}>{name}</p>
         <p className={s.text}>{number}</p>
-        <button className={s.button} onClick = {()=> onDeleteContact(id)}>Delete</button>
+        <button className={s.button} onClick = {onDeleteContact}>Delete</button>
     </li>
 );
 
