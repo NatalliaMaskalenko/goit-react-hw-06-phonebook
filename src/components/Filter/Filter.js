@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import { connect } from 'react-redux';
 import phonebookActions from '../../redux/phonebook/phonebook-actions';
 import s from './Filter.module.css';
 
 const Filter = ({ value, onChange }) => (
+    // const value = useSelector(state => state.contacts.filter);
+
     <label className={s.filter__label}>
         Find contacts by name
         <input className={s.filter__input} type="text" value={value} onChange={onChange} placeholder="Jacob Mercer" />
