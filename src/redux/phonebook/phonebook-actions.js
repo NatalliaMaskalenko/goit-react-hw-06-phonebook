@@ -32,4 +32,4 @@ export const changeFilter = createAction('contact/cgangeFilter');
 //     payload: value,
 // });
 
-export default { addContact, deleteContact, changeFilter };
+// export default { addContact, deleteContact, changeFilter };
